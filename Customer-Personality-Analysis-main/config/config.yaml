@@ -1,0 +1,37 @@
+training_pipeline_config:
+  pipeline_name: 'customer'
+  root_artifact_dir: 'artifacts'
+
+data_ingestion_config:
+  download_data_url: 'https://raw.githubusercontent.com/amankharwal/Website-data/master/marketing_campaign.csv'
+  raw_data_dir: 'raw_data'
+  ingested_data_dir: 'ingested_data'
+  ingested_train_dir: 'train'
+  ingested_test_dir: 'test'
+
+data_validation_config:
+  schema_file_dir: 'config'
+  schema_file_path: 'schema.yaml'
+  report_file_path: 'report.json'
+  report_page_file_path: 'report.html'
+
+data_transformation_config:
+  transformed_data_dir: 'transformed_data'
+  transformed_train_dir: 'train'
+  transformed_test_dir: 'test'
+  preprocessed_dir: 'preprocessed'
+  preprocessed_model_object_file_name: 'preprocessed.pkl'
+
+model_trainer_config:
+  trained_model_dir: 'trainied_model'
+  trained_model_name: 'model.pkl'
+  base_accuracy: 0.60
+  model_config_dir: 'config'
+  model_config_filename: 'model.yaml'
+
+model_evaluation_config:
+  model_evaluation_file_name: 'model_evaluation.yaml'
+
+# model_pusher_config:
+#   export_model_dir: 'saved_models'
+  

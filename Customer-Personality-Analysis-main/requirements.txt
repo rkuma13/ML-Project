@@ -1,0 +1,15 @@
+scipy
+numpy
+flask
+flask_cors
+gunicorn
+pandas 
+matplotlib
+seaborn
+sklearn
+PyYAML
+six
+evidently
+dill
+kneed
+-e .
